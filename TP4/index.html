@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/tp4.css" media="screen" />
+		<title>TP4</title>
+	</head>
+	<body>
+		<div class="header">
+				<a href="#"><div class="logo" id="logo"></div></a>
+				<div class="extra_header"></div>
+		</div>
+
+		<div class="container camino">
+	    <ul class="nav ">
+	  <li class="nav-item">
+	    <a class="camino" id="inicio" href="#">Inicio >></a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="camino" href="#">Accion >> </a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="camino" href="#">RockBattle</a>
+	  </li>
+	</ul>
+	  </div>
+
+		<div id="juegoPresentacion">
+		<div class="container" >
+				<div class="row presentacion">
+
+					<div class="portada">
+					</div>
+					<div class="descripcion">
+									<div class="tituloJuego">
+									</div>
+									<div class="text-justify detalleJuego">
+										<p>RockBattle es un juego sencillo pero entretenido. Utilizando las teclas derecha, izquierda, arriba y abajo del teclado, debemos evitar chocar los asteroides que giran en nuestra area de vuelo, y complican nuestro arribo a destino. Estamos en sus manos, Comandante!</p>
+									</div>
+									<div class="jugar">    <!-- boton para ingresar  -->
+										 <button type="button" id="jugar" class="btn btn-primary btn-lg boton">JUGAR</button>
+									</div>
+									<div class="favoritos">    <!-- boton para ingresar  -->
+									</div>
+					</div>
+				</div>
+		</div>
+		<div class="informacion" >
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item">
+				<a class="nav-link active info" id="home-tab" data-toggle="tab" href="#informacion" role="tab" aria-controls="home" aria-selected="true">Informacion
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link info" id="profile-tab" data-toggle="tab" href="#como_jugar" role="tab" aria-controls="profile" aria-selected="false">Como Jugar</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link info" id="contact-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="contact" aria-selected="false">Comentarios</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link info" id="contact-tab" data-toggle="tab" href="#ranking" role="tab" aria-controls="contact" aria-selected="false">Ranking Jugadores</a>
+			  </li>
+			</ul>
+			<div class="tab-content detalles" id="myTabContent">
+					<div class="tab-pane fade show active" id="informacion" role="tabpanel" aria-labelledby="home-tab">
+							<p>RockBattle es un juego sencillo pero entretenido. Utilizando las teclas derecha, izquierda, arriba y abajo del teclado, debemos evitar chocar los asteroides que giran en nuestra area de vuelo, y complican nuestro arribo a destino. Estamos en sus manos, Comandante!</p>
+							<p>Ten cuidado, porque a medida que pasan los segundos, los asteriodes se moveran con mas rapidez .... estas avisado!!</p>
+							<p>Tienes 3 minutos para demostrar tu destreza ..... si llegas a ese tiempo, nos habras salvado!</p>
+					</div>
+					<div class="tab-pane fade" id="como_jugar" role="tabpanel" aria-labelledby="profile-tab">
+						<p>Utilizando las teclas derecha, izquierda, arriba y abajo del teclado, debemos evitar chocar los asteroides que giran en nuestra area de vuelo</p>
+
+					</div>
+					<div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="contact-tab">  Comentarios....  </div>
+					<div class="tab-pane fade" id="ranking" role="tabpanel" aria-labelledby="contact-tab">ranking....</div>
+			</div>
+		</div>
+		<div class="pie_pagina" >
+			<div class="contenedor">
+					<div class="pie_izq">
+						<a href="#"><img src="images/logo_chico.png" alt="logo"></a><p>
+						© 2018  visualizacion Todos los derechos reservados.</p>
+					</div>
+					<div class="pie_der">
+						<p><strong>Corporativo</strong></p>
+						<a class="info" href="#">Terminos de Uso</a></br>
+						<a class="info" href="#">Politica de Privacidad</a></br>
+						<a class="info" href="#">Cookies</a></br>
+						<a class="info" href="#">Quienes Somos</a></br>
+					</div>
+					<div class="pie_der">
+						<p><strong>Podemos Ayudarte</strong></p>
+						<a class="info" href="#">Tu Cuenta</a></br>
+						<a class="info" href="#">Preguntas Frecuentes</a></br>
+						<a class="info" href="#">Ayuda</a></br>
+						<a class="info" href="#">Devolucion de Juegos</a></br>
+					</div>
+			</div>
+		</div>
+		</div>  <!-- FIN div PRESENTACION DEL JUEGO -->
+
+		<div class="container juego" id="juego" style="display:none">
+	    <div class="fondoOn" id= "pantalla">
+	      <div  id="fondoBienv">
+	      </div>
+	      <div class="tablero text-center">
+	        <p class="titulo">RockBattle</p>
+	        <p class="resumen">Utiliza las flechas de tu teclado
+	          para eludir los asteriodes ..... SUERTE, Comandante!!!!
+	        </p>
+	        <div class="puntos" id="puntos">    <!-- boton para ingresar  -->
+
+	        </div>
+	        <div class="nuevoJuego">    <!-- boton para ingresar  -->
+	          <button type="button" id="nuevo" class="btn btn-primary btn-lg boton">COMENZAR</button>
+	        </div>
+	      </div>
+	    </div>
+		<div class="informacion2" >
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+				<a class="nav-link active info" id="home-tab" data-toggle="tab" href="#informacion" role="tab" aria-controls="home" aria-selected="true">Informacion
+				</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link info" id="profile-tab" data-toggle="tab" href="#como_jugar" role="tab" aria-controls="profile" aria-selected="false">Como Jugar</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link info" id="contact-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="contact" aria-selected="false">Comentarios</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link info" id="contact-tab" data-toggle="tab" href="#ranking" role="tab" aria-controls="contact" aria-selected="false">Ranking Jugadores</a>
+				</li>
+			</ul>
+			<div class="tab-content detalles" id="myTabContent">
+					<div class="tab-pane fade show active" id="informacion" role="tabpanel" aria-labelledby="home-tab">
+							<p>RockBattle es un juego sencillo pero entretenido. Utilizando las teclas derecha, izquierda, arriba y abajo del teclado, debemos evitar chocar los asteroides que giran en nuestra area de vuelo, y complican nuestro arribo a destino. Estamos en sus manos, Comandante!</p>
+							<p>ten cuidado, porque a medida que pasan los segundos, los asteriodes se moveran con mas rapidez .... estas avisado!!</p>
+							<p>Tienes 3 minutos para demostrar tu destreza ..... si llegas a ese tiempo, nos habras salvado!</p>
+					</div>
+					<div class="tab-pane fade" id="como_jugar" role="tabpanel" aria-labelledby="profile-tab">
+						<p>Utilizando las teclas derecha, izquierda, arriba y abajo del teclado, debemos evitar chocar los asteroides que giran en nuestra area de vuelo</p>
+
+					</div>
+					<div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="contact-tab">  Comentarios....  </div>
+					<div class="tab-pane fade" id="ranking" role="tabpanel" aria-labelledby="contact-tab">ranking....</div>
+			</div>
+		</div>
+		<div class="pie_pagina2" >
+			<div class="contenedor">
+					<div class="pie_izq">
+						<a href="#"><img src="images/logo_chico.png" alt="logo"></a><p>
+						© 2018  visualizacion Todos los derechos reservados.</p>
+					</div>
+					<div class="pie_der">
+						<p><strong>Corporativo</strong></p>
+						<a class="info" href="#">Terminos de Uso</a></br>
+						<a class="info" href="#">Politica de Privacidad</a></br>
+						<a class="info" href="#">Cookies</a></br>
+						<a class="info" href="#">Quienes Somos</a></br>
+					</div>
+					<div class="pie_der">
+						<p><strong>Podemos Ayudarte</strong></p>
+						<a class="info" href="#">Tu Cuenta</a></br>
+						<a class="info" href="#">Preguntas Frecuentes</a></br>
+						<a class="info" href="#">Ayuda</a></br>
+						<a class="info" href="#">Devolucion de Juegos</a></br>
+					</div>
+			</div>
+		</div>
+	  </div>  <!-- FIN div DEL JUEGO -->
+
+	</body>
+			<script type="text/javascript" src="js/nave.js"></script>
+			<script type="text/javascript" src="js/enemigo.js"></script>
+			<script type="text/javascript" src="js/tp4.js"></script>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</html>
